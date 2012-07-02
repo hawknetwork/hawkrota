@@ -7,6 +7,7 @@ public class PersonGroup implements Serializable {
 	private static final long serialVersionUID = -8302288355062584017L;
 	private Job job;
 	private List<Person> personList;
+	private String name;
 	public Job getJob() {
 		return job;
 	}
@@ -18,5 +19,11 @@ public class PersonGroup implements Serializable {
 	}
 	public void setPersonList(List<Person> personList) {
 		this.personList = personList;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
 	}
 }
