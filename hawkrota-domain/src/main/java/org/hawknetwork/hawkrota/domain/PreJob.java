@@ -1,8 +1,10 @@
 package org.hawknetwork.hawkrota.domain;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class PreJob {
+public class PreJob implements Serializable {
+	private static final long serialVersionUID = 2326628629050045316L;
 	private String uniqueKey;
 	private String headingName;
 	private String teamLeader;

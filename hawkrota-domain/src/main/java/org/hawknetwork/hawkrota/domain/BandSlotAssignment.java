@@ -1,6 +1,9 @@
 package org.hawknetwork.hawkrota.domain;
 
-public class BandSlotAssignment {
+import java.io.Serializable;
+
+public class BandSlotAssignment implements Serializable {
+	private static final long serialVersionUID = 3661367008920464597L;
 	private BandSlot slot;
 	private Person person;
 	public BandSlot getSlot() {

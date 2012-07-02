@@ -1,6 +1,9 @@
 package org.hawknetwork.hawkrota.domain;
 
-public class TaskLine {
+import java.io.Serializable;
+
+public class TaskLine implements Serializable {
+	private static final long serialVersionUID = 3790381648852634269L;
 	private String taskLine;
 	private boolean important;
 	public String getTaskLine() {

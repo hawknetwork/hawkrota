@@ -1,6 +1,9 @@
 package org.hawknetwork.hawkrota.domain;
 
-public class BandJob {
+import java.io.Serializable;
+
+public class BandJob implements Serializable {
+	private static final long serialVersionUID = 9092260568248036255L;
 	private String jobName;
 
 	public String getJobName() {

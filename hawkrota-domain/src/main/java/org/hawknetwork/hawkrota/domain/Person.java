@@ -1,8 +1,10 @@
 package org.hawknetwork.hawkrota.domain;
 
+import java.io.Serializable;
 import java.util.Map;
 
-public class Person {
+public class Person implements Serializable {
+	private static final long serialVersionUID = -5622082806280153735L;
 	private String firstName;
 	private String lastName;
 	private boolean nameOrder;

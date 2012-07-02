@@ -1,6 +1,9 @@
 package org.hawknetwork.hawkrota.domain;
 
-public class Slot {
+import java.io.Serializable;
+
+public class Slot implements Serializable {
+	private static final long serialVersionUID = 457257469845184808L;
 	private Event event;
 	private Job job;
 	public Event getEvent() {

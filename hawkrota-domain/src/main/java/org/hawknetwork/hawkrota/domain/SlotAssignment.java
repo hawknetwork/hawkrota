@@ -1,6 +1,9 @@
 package org.hawknetwork.hawkrota.domain;
 
-public class SlotAssignment {
+import java.io.Serializable;
+
+public class SlotAssignment implements Serializable {
+	private static final long serialVersionUID = 9173884564619159404L;
 	private Slot slot;
 	private Person person;
 	public Slot getSlot() {
