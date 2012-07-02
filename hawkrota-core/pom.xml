@@ -50,6 +50,11 @@
     	<artifactId>hawkrota-interface-layer</artifactId>
     	<version>0.0.1-SNAPSHOT</version>
     </dependency>
+    <dependency>
+    	<groupId>org.hawknetwork.hawkrota</groupId>
+    	<artifactId>hawkrota-domain</artifactId>
+    	<version>0.0.1-SNAPSHOT</version>
+    </dependency>
   </dependencies>
 
   <build>
