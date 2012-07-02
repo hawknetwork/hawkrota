@@ -7,9 +7,14 @@ public class PreJob implements Serializable {
 	private static final long serialVersionUID = 2326628629050045316L;
 	private String uniqueKey;
 	private String headingName;
-	private String teamLeader;
 	private int numRequired;
 	private Date arrivalTime;
+	private boolean displayGroupName;
+	private boolean conflictsWithBand;
+	// Team Leader doesn't need to be a Person object because we don't need to cross-reference
+	// with the job list - they can team lead as well as doing it (e.g. Kurigers supervisor team).
+	// Making them a Person would be much more difficult because Person already depends on Job.
+	private String teamLeader;
 	public String getUniqueKey() {
 		return uniqueKey;
 	}
@@ -39,5 +44,17 @@ public class PreJob implements Serializable {
 	}
 	public void setArrivalTime(Date arrivalTime) {
 		this.arrivalTime = arrivalTime;
+	}
+	public boolean isDisplayGroupName() {
+		return displayGroupName;
+	}
+	public void setDisplayGroupName(boolean displayGroupName) {
+		this.displayGroupName = displayGroupName;
+	}
+	public boolean isConflictsWithBand() {
+		return conflictsWithBand;
+	}
+	public void setConflictsWithBand(boolean conflictsWithBand) {
+		this.conflictsWithBand = conflictsWithBand;
 	}
 }
