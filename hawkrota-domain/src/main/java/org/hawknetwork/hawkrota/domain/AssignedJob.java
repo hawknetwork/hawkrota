@@ -2,7 +2,9 @@ package org.hawknetwork.hawkrota.domain;
 
 import java.io.Serializable;
 
-public class AssignedJob implements Serializable {
+import org.hawknetwork.hawkrota.domain.base.BaseDomainClass;
+
+public class AssignedJob extends BaseDomainClass implements Serializable {
 	private static final long serialVersionUID = 6058310878754307489L;
 	private Job job;
 	private int trainingTimesLeft;

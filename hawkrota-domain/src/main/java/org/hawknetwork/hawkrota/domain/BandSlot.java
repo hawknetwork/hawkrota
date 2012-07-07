@@ -2,10 +2,9 @@ package org.hawknetwork.hawkrota.domain;
 
 import java.io.Serializable;
 
-public class BandSlot implements Serializable {
-	/**
-	 * 
-	 */
+import org.hawknetwork.hawkrota.domain.base.BaseDomainClass;
+
+public class BandSlot extends BaseDomainClass implements Serializable {
 	private static final long serialVersionUID = -7268684555265866960L;
 	private Event event;
 	private BandJob job;

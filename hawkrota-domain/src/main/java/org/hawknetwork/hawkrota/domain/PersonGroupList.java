@@ -3,7 +3,9 @@ package org.hawknetwork.hawkrota.domain;
 import java.io.Serializable;
 import java.util.List;
 
-public class PersonGroupList implements Serializable {
+import org.hawknetwork.hawkrota.domain.base.BaseDomainClass;
+
+public class PersonGroupList extends BaseDomainClass implements Serializable {
 	private static final long serialVersionUID = -7913369253674931618L;
 	private List<PersonGroup> personGroupList;
 

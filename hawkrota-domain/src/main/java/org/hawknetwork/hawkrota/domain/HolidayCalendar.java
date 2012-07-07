@@ -3,7 +3,9 @@ package org.hawknetwork.hawkrota.domain;
 import java.io.Serializable;
 import java.util.List;
 
-public class HolidayCalendar implements Serializable {
+import org.hawknetwork.hawkrota.domain.base.BaseDomainClass;
+
+public class HolidayCalendar extends BaseDomainClass implements Serializable {
 	private static final long serialVersionUID = -6759720036161256749L;
 	private List<SlotAssignment> holidays;
 

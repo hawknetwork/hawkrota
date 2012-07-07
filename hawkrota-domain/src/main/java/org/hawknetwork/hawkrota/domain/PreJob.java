@@ -3,9 +3,10 @@ package org.hawknetwork.hawkrota.domain;
 import java.io.Serializable;
 import java.util.Date;
 
-public class PreJob implements Serializable {
+import org.hawknetwork.hawkrota.domain.base.BaseDomainClass;
+
+public class PreJob extends BaseDomainClass implements Serializable {
 	private static final long serialVersionUID = 2326628629050045316L;
-	private String uniqueKey;
 	private String headingName;
 	private int numRequired;
 	private Date arrivalTime;
@@ -15,12 +16,6 @@ public class PreJob implements Serializable {
 	// with the job list - they can team lead as well as doing it (e.g. Kurigers supervisor team).
 	// Making them a Person would be much more difficult because Person already depends on Job.
 	private String teamLeader;
-	public String getUniqueKey() {
-		return uniqueKey;
-	}
-	public void setUniqueKey(String uniqueKey) {
-		this.uniqueKey = uniqueKey;
-	}
 	public String getHeadingName() {
 		return headingName;
 	}

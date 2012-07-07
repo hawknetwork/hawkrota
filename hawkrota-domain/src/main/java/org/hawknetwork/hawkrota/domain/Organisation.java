@@ -5,7 +5,9 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
-public class Organisation implements Serializable {
+import org.hawknetwork.hawkrota.domain.base.BaseDomainClass;
+
+public class Organisation extends BaseDomainClass implements Serializable {
 	private static final long serialVersionUID = -1945590206856714150L;
 	private String appTitle;
 	private Color headerColour;
