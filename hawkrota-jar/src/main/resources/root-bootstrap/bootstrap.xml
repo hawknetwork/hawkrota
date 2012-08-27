@@ -8,7 +8,7 @@
 
 	<bean id="lengthyBootstrap" class="org.hawknetwork.common.springframework.bootstrap.SpringXMLBootstrapImpl">
 		<property name="configLocationCSV" value="classpath*:/core-bootstrap/bootstrap.xml,classpath*:/gui-bootstrap/bootstrap.xml"/>
-		<property name="nextBean" value="rotaWizard"/>
+		<property name="nextBean" value="guiLauncher"/>
 	</bean>
 	
 	<bean id="secondBootstrapLoader" class="org.hawknetwork.hawkrota.gui.splash.SplashScreenImpl">
