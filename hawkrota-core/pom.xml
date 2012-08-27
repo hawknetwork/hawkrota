@@ -25,11 +25,6 @@
     	<version>5.4.0.Final</version>
     </dependency>
     <dependency>
-    	<groupId>org.springframework</groupId>
-    	<artifactId>spring-context</artifactId>
-    	<version>${spring-version}</version>
-    </dependency>
-    <dependency>
     	<groupId>com.googlecode.apparat</groupId>
     	<artifactId>apparat-lzma-encoder</artifactId>
     	<version>1.0-RC9</version>
@@ -54,6 +49,11 @@
     	<groupId>org.hawknetwork.hawkrota</groupId>
     	<artifactId>hawkrota-domain</artifactId>
     	<version>0.0.1-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.hawknetwork.common</groupId>
+    	<artifactId>hawkcommon-spring-dependency</artifactId>
+    	<version>${hawkcommon-version}</version>
     </dependency>
   </dependencies>
 

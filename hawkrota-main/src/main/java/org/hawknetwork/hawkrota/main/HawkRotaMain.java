@@ -1,8 +1,8 @@
 package org.hawknetwork.hawkrota.main;
 
-import org.hawknetwork.hawkrota.interfacelayer.bootstrap.BootstrapLoader;
-import org.hawknetwork.hawkrota.interfacelayer.session.Session;
-import org.hawknetwork.hawkrota.interfacelayer.session.UserSession;
+import org.hawknetwork.common.bootstrap.interfaces.BootstrapLoader;
+import org.hawknetwork.common.session.interfaces.Session;
+import org.hawknetwork.common.session.interfaces.UserSession;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

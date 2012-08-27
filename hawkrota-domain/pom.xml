@@ -20,7 +20,7 @@
   	<dependency>
   		<groupId>org.hawknetwork.common</groupId>
   		<artifactId>hawkcommon-core</artifactId>
-  		<version>0.0.1-SNAPSHOT</version>
+  		<version>${hawkcommon-version}</version>
   	</dependency>
   </dependencies>
 </project>

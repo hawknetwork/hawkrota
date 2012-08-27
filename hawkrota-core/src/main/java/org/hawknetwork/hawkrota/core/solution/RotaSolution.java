@@ -1,5 +1,6 @@
 package org.hawknetwork.hawkrota.core.solution;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
@@ -9,8 +10,10 @@ import org.hawknetwork.hawkrota.core.entity.SlotAssignmentEntity;
 import org.hawknetwork.hawkrota.domain.JobList;
 import org.hawknetwork.hawkrota.domain.PersonGroupList;
 import org.hawknetwork.hawkrota.domain.PersonList;
+import org.hawknetwork.hawkrota.domain.Rota;
+import org.hawknetwork.hawkrota.domain.SlotAssignment;
 
-public class Rota implements Solution<HardAndSoftScore> {
+public class RotaSolution implements Solution<HardAndSoftScore> {
 
 	// Problem Facts
 	JobList jobList;
@@ -43,5 +46,20 @@ public class Rota implements Solution<HardAndSoftScore> {
 	public Solution<HardAndSoftScore> cloneSolution() {
 		// TODO Auto-generated method stub
 		return null;
+	}
+	
+	public Rota toRota(String key) {
+		Rota rota = new Rota();
+		rota.setKey(key);
+		List<SlotAssignment> sal = new ArrayList<SlotAssignment>();
+		for (SlotAssignmentEntity sae : slotAssignmentEntityList) {
+			SlotAssignment sa = new SlotAssignment();
+			sa.setPerson(sae.getPerson());
+			sa.setSlot(sae.getSlot());
+			sa.setKey(Integer.toString(sal.size()));
+			sal.add(sa);
+		}
+		rota.setSlotAssignmentList(sal);
+		return rota;
 	}
 }
