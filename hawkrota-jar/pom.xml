@@ -28,6 +28,16 @@
     	<artifactId>hawkrota-gui</artifactId>
     	<version>0.0.1-SNAPSHOT</version>
     </dependency>
+    <dependency>
+    	<groupId>org.hawknetwork.common</groupId>
+    	<artifactId>hawkcommon-spring</artifactId>
+    	<version>${hawkcommon-version}</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.hawknetwork.common</groupId>
+    	<artifactId>hawkcommon-session</artifactId>
+    	<version>${hawkcommon-version}</version>
+    </dependency>
   </dependencies>
   
   <build>

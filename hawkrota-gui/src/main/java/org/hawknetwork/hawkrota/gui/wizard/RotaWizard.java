@@ -1,6 +1,6 @@
 package org.hawknetwork.hawkrota.gui.wizard;
 
-import org.hawknetwork.hawkrota.interfacelayer.bootstrap.AfterBootstrap;
+import org.hawknetwork.common.bootstrap.interfaces.AfterBootstrap;
 
 public class RotaWizard implements AfterBootstrap {
 

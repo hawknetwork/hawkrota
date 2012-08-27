@@ -3,8 +3,8 @@ package org.hawknetwork.hawkrota.gui.splash;
 import javax.swing.JFrame;
 import javax.swing.WindowConstants;
 
-import org.hawknetwork.hawkrota.interfacelayer.bootstrap.Bootstrap;
-import org.hawknetwork.hawkrota.interfacelayer.bootstrap.BootstrapLoader;
+import org.hawknetwork.common.bootstrap.interfaces.Bootstrap;
+import org.hawknetwork.common.bootstrap.interfaces.BootstrapLoader;
 
 public class SplashScreenImpl implements BootstrapLoader {
 	

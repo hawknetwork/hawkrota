@@ -12,8 +12,8 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <spring-version>3.1.1.RELEASE</spring-version>
     <junit-version>3.8.1</junit-version>
+    <hawkcommon-version>0.0.1-SNAPSHOT</hawkcommon-version>
   </properties>
 
   <build>

@@ -6,7 +6,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
                            http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-	<bean id="lengthyBootstrap" class="org.hawknetwork.hawkrota.main.SpringXMLBootstrapImpl">
+	<bean id="lengthyBootstrap" class="org.hawknetwork.common.springframework.bootstrap.SpringXMLBootstrapImpl">
 		<property name="configLocationCSV" value="classpath*:/core-bootstrap/bootstrap.xml,classpath*:/gui-bootstrap/bootstrap.xml"/>
 		<property name="nextBean" value="rotaWizard"/>
 	</bean>
@@ -15,6 +15,6 @@
 		<property name="secondBootstrap" ref="lengthyBootstrap"/>
 	</bean>
 	
-	<bean id="session" class="org.hawknetwork.hawkrota.main.SessionImpl"/>
+	<bean id="session" class="org.hawknetwork.common.session.impl.SessionImpl"/>
 
 </beans>
