@@ -15,6 +15,6 @@
 		<property name="secondBootstrap" ref="lengthyBootstrap"/>
 	</bean>
 	
-	<bean id="session" class="org.hawknetwork.common.session.impl.SessionImpl"/>
+	<bean id="session" class="org.hawknetwork.common.session.impl.SessionStaticImpl"/>
 
 </beans>
