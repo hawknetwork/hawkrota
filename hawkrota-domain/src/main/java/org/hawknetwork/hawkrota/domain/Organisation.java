@@ -5,9 +5,9 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
-import org.hawknetwork.common.base.impl.BaseKeyResolvingDomainClass;
 
-public class Organisation extends BaseKeyResolvingDomainClass implements Serializable {
+
+public class Organisation implements Serializable {
 	private static final long serialVersionUID = -1945590206856714150L;
 	private String appTitle;
 	private Color headerColour;

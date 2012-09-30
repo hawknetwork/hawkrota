@@ -3,9 +3,9 @@ package org.hawknetwork.hawkrota.domain;
 import java.io.Serializable;
 import java.util.List;
 
-import org.hawknetwork.common.base.impl.BaseKeyResolvingDomainClass;
 
-public class CoveredEvents extends BaseKeyResolvingDomainClass implements Serializable {
+
+public class CoveredEvents implements Serializable {
 	private static final long serialVersionUID = 1744801800763542969L;
 	private List<Event> eventList;
 	private Event firstEvent;

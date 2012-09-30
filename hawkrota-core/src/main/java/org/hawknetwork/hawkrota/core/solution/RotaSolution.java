@@ -50,13 +50,11 @@ public class RotaSolution implements Solution<HardAndSoftScore> {
 	
 	public Rota toRota(String key) {
 		Rota rota = new Rota();
-		rota.setKey(key);
 		List<SlotAssignment> sal = new ArrayList<SlotAssignment>();
 		for (SlotAssignmentEntity sae : slotAssignmentEntityList) {
 			SlotAssignment sa = new SlotAssignment();
 			sa.setPerson(sae.getPerson());
 			sa.setSlot(sae.getSlot());
-			sa.setKey(Integer.toString(sal.size()));
 			sal.add(sa);
 		}
 		rota.setSlotAssignmentList(sal);

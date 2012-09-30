@@ -2,9 +2,8 @@ package org.hawknetwork.hawkrota.domain;
 
 import java.io.Serializable;
 
-import org.hawknetwork.common.base.impl.BaseFileIntendedDomainClass;
-
-public class CrossSessionData extends BaseFileIntendedDomainClass implements Serializable {
+//TODO May no longer be required
+public class CrossSessionData implements Serializable {
 	private static final long serialVersionUID = -1580754970612033329L;
 	private JobList jobList;
 	private Organisation organisation;

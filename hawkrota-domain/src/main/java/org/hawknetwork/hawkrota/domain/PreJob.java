@@ -3,9 +3,9 @@ package org.hawknetwork.hawkrota.domain;
 import java.io.Serializable;
 import java.util.Date;
 
-import org.hawknetwork.common.base.impl.BaseKeyResolvingDomainClass;
 
-public class PreJob extends BaseKeyResolvingDomainClass implements Serializable {
+
+public class PreJob implements Serializable {
 	private static final long serialVersionUID = 2326628629050045316L;
 	private String headingName;
 	private int numRequired;

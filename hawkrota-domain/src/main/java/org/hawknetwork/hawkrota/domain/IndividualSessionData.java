@@ -2,11 +2,10 @@ package org.hawknetwork.hawkrota.domain;
 
 import java.io.Serializable;
 
-import org.hawknetwork.common.base.impl.BaseFileIntendedDomainClass;
-
 // can be either non-finalised scratch (null rota), non-finalised refactor (old rota),
 // or finalised (real rota)
-public class IndividualSessionData extends BaseFileIntendedDomainClass implements Serializable {
+// TODO May no longer be required
+public class IndividualSessionData implements Serializable {
 	private static final long serialVersionUID = 2538677060054716125L;
 	private BandRota bandRota;
 	private CoveredEvents coveredEvents;
