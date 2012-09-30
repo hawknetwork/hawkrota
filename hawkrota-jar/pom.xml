@@ -16,7 +16,7 @@
     <dependency>
     	<groupId>org.hawknetwork.hawkrota</groupId>
     	<artifactId>hawkrota-core</artifactId>
-    	<version>0.0.1-SNAPSHOT</version>
+    	<version>0.0.2-SNAPSHOT</version>
     </dependency>
   </dependencies>
   
@@ -29,7 +29,7 @@
   </build>
   <parent>
   	<groupId>org.hawknetwork.hawkrota</groupId>
-  	<version>0.0.1-SNAPSHOT</version>
+  	<version>0.0.2-SNAPSHOT</version>
   	<artifactId>hawkrota-root</artifactId>
   </parent>
 </project>
